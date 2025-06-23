@@ -1,0 +1,16 @@
+.navbar {
+    padding: 36px 0 26px;
+}
+
+.navbar-nav {
+    max-width: 618px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: $color;
+    &:hover {
+        color: $primary-color;
+    }
+}
