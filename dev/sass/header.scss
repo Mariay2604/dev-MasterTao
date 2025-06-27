@@ -14,3 +14,30 @@
         color: $primary-color;
     }
 }
+
+.hamburger {
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus {
+        box-shadow: none;
+}
+}
+
+.hamburger-box {
+    width: 27px;
+    height: 25px;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #ffffff; 
+    width: 27px;
+    height: 2px;
+}
+
