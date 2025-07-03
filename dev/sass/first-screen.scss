@@ -37,6 +37,28 @@
 .swiper-pagination-horizontal {
   top: calc(100% - 59px);
 }
+
+.swiper-banner-arrow {
+  --padding: 36px;
+  height: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: calc(1522 + var(--padding)*2);
+  padding: 0 var(--padding);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-batton-next, .swiper-batton-prev {
+  color: #fff;
+  &:hover {
+    color: $secondary-color;
+  }
+}
 }
 
 .banner-title {
