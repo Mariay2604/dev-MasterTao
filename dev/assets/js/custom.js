@@ -14,11 +14,14 @@ const swiperBanner = new Swiper('.swiper-banner', {
     clickable: true,
     el: '.swiper-pagination',
   },
-
   // Navigation arrows
-  navigation: {
+   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+breakpoints: {
+    992: {
 
+    }
+  }
 });

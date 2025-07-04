@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
 
   .container {
     padding-top: 163px;
@@ -53,7 +52,8 @@
   justify-content: space-between;
 }
 
-.swiper-batton-next, .swiper-batton-prev {
+.swiper-button-next,
+.swiper-button-prev  {
   color: #fff;
   &:hover {
     color: $secondary-color;
