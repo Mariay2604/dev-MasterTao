@@ -6,6 +6,41 @@ body {
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.245;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.26;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.245;   
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 1.245;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.355;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.245;
+}
+
+h6 {
+    font-size: 17px;
+    line-height: 1.245;  
+}
+
 .fw-300 {
     font-weight: 300;
 }
@@ -17,6 +52,52 @@ body {
 }
 .fw-700 {
     font-weight: 700;
+}
+
+.template-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 70px;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        &::after {
+      content: "";
+      position: absolute;
+      bottom: 54px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 85px;
+      height: 2px;
+      background-color: $primary-color;
+    }
+}
+
+&.template-title_case-2 {
+    text-align: left;
+
+    h2 {
+        &::after  {
+            left: 0;
+            transform: none;
+        }
+    }
+}
+
+&.template-title_case-3 {
+    max-width: 626px;
+    text-align: left;
+
+    h2 {
+        &::after  {
+           position: static;
+           display: inline-block;
+           transform: none;
+           margin: 0 0 8px 20px;
+        }
+    }
+}
 }
 
 .btn {
@@ -49,4 +130,5 @@ background-color: transparent;
     background-color: $primary-color;
 }
 }
+
 }
