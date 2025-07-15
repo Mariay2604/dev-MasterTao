@@ -1,0 +1,71 @@
+.calculation-form {
+    max-width: 626px;
+    background: $bg-color-accent;
+    border-radius: 20px;
+    padding: 50px 50px 60px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin-bottom: 34px;
+    &:last-child {
+        margin-bottom: 24px;
+    }
+}
+
+.form-column {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box_checkbox {
+    padding-left: 45px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    background-color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 18px 20px;
+}
+
+input[type='checkbox'] {
+    display: none;
+    + label {
+        &:hover {
+            &:before {
+                border-color: $primary-color;
+            }
+        }
+    }
+}
+
+input[type='checkbox'] + label:before {
+     content: "";
+     background-color: #fff;
+     border: 1px solid $bg-color;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 24px;
+     height: 24px;
+     border-radius: 4px;
+}
+
+input[type='checkbox']:checked + label:before {
+     content: "";
+     background: url(./assets/img/checked\ 1.svg) center #fff no-repeat;
+}
