@@ -1,18 +1,22 @@
+@use 'variables' as variables;
+
+.logo {
+    min-width: 172px;
+}
+
 .navbar {
     padding: 25px 0 26px;
 }
 
 .navbar-nav {
     max-width: 619px;
-    padding: 5px 0 0 0;
-    justify-content: space-between;
-    
+    padding: 5px 0 0 0;    
 }
 
 .nav-link {
-    color: $color;
+    color: variables.$color;
     &:hover {
-        color: $primary-color;
+        color: variables.$primary-color;
     }
 }
 
