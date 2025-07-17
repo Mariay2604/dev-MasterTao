@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     gap: 20px 30px;
     margin-bottom: 34px;
-    &:last-child {
+    &:last-of-type {
         margin-bottom: 24px;
     }
 }
@@ -25,14 +25,18 @@
 .input-box {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .input-box_checkbox {
-    padding-left: 45px;
+    padding-left: 33px;
+    padding-top: 2px;
 }
+
 
 label {
     cursor: pointer;
+    
 }
 
 input {
