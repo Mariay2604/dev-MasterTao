@@ -1,5 +1,60 @@
 <section class="calculation">
     <div class="container">
-
+       <div class="template-title template-title_case-3">
+        <h2>Получить рассчет стоимости доставки вашего груза</h2>
+       </div>
+       <form class="calculation-form">
+        <div class="form-row">
+            <div class="form-column">
+                <div class="input-box">
+                    <label for="product-category">Категория товара:</label>
+                    <select id="product-category">
+                      <option value="1">легкий</option>
+                      <option value="2">середній</option>
+                      <option value="3">важкий</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="cargo-weight">Вес груза (кг):</label>
+                    <input id="cargo-weight" type="number" placeholder="Введите вес">
+                </div>
+            </div>
+            <div class="form-column">
+              <div class="input-box">
+                    <label for="cargo-cost">Стоимость груза:</label>
+                    <input id="cargo-cost" type="number" placeholder="Введите стоимость">
+                </div> 
+              <div class="input-box">
+                    <label for="cargo-volume">Объем груза (м3):</label>
+                    <input id="cargo-volume" type="number" placeholder="Введите объем">
+                </div>
+            </div>
+            <div class="form-column">
+                <div class="input-box">
+                    <input id="insurance" type="checkbox">
+                    <label for="insurance">Страховка</label>
+                </div>
+                <div class="input-box">
+                    <input id="custom-clearance" type="checkbox">
+                    <label for="custom-clearance">Таможенное оформление</label>
+                </div>               
+            </div>
+            <div class="form-column">
+                <div class="input-box">
+                    <label for="hs-code">Код ТН ВЭД:</label>
+                    <input id="hs-code" type="text" placeholder="Введите код">
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="input-box">
+            <div id="file-name" class="file-name"></div>
+            <input id="calculation-file" type="file">
+            <label for="calculation-file">Загрузить фото товара</label>
+          </div>
+        </div>
+            <a href="#" class="btn btn-lg btn-primary">Следующий шаг <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
+       </form>
+       <img src="./assets/img/man.png" class="calculation-man" alt="man">
     </div>
 </section>

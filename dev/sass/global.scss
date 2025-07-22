@@ -17,6 +17,10 @@ body {
 
 }
 
+section {
+    margin-bottom: $section-margin;
+}
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.245;
     font-weight: 700;
