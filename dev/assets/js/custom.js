@@ -50,3 +50,31 @@ fileInput.forEach(item => {
         fileName.innerHTML = item.files[0].name;
     })
 })
+
+const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+
+const swipeAdvantages = new Swiper('#advantages', {
+  spaceBetween: 12,
+  loop: true,
+  simulateTouch: true,
+  slidesPerView: 1, 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    enabled: true,
+  },
+
+  breakpoints: {
+    1025: {
+      spaceBetween: 0,
+      loop: false,
+      slidesPerView: advantagesSlideLength,
+      slidesPerGroup: advantagesSlideLength,
+      simulateTouch: false,
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      }
+    }
+  }
+});
