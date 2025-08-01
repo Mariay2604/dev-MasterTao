@@ -58,6 +58,7 @@ const swipeAdvantages = new Swiper('#advantages', {
   loop: true,
   simulateTouch: true,
   slidesPerView: 1, 
+  roundLengths: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -65,11 +66,12 @@ const swipeAdvantages = new Swiper('#advantages', {
   },
 
   breakpoints: {
-    1025: {
+    992: {
       spaceBetween: 0,
       loop: false,
-      slidesPerView: advantagesSlideLength,
+      slidesPerView: 'auto',
       slidesPerGroup: advantagesSlideLength,
+      loop: false,
       simulateTouch: false,
       pagination: {
         enabled: false,

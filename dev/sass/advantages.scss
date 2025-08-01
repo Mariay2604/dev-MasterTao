@@ -1,0 +1,31 @@
+@use 'variables' as variables;
+
+    .advantage {
+        text-align: center;
+    }
+
+    .advantage_img-box {
+        width: 113px;
+        height: 113px;
+        border: 1px solid #6C7188;
+        margin: 0 auto 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .advantage_img-box::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        background-color: variables.$secondary-color;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .advantage_title {
+        font-size: 18px;
+        font-weight: 400;
+    }
