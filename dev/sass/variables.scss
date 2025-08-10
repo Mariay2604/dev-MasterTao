@@ -24,6 +24,21 @@ $section-margin-mobile: 60px;
     transform: translate(-50%);
 }
 
+@mixin swiper-arrow-container {
+  --padding: 20px;
+  height: 0;
+  position: absolute;
+  top: calc(50% - 23px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: calc(1503px + var(--padding)*2);
+  padding: 0 var(--padding);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin flex-centered {
   display: flex;
   align-items: center;

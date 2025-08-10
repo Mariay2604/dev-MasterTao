@@ -237,7 +237,7 @@ input[type='checkbox']:checked + label:before {
     border-color: variables.$primary-color;
     color: variables.$color;
     background-color: variables.$primary-color;
-    padding: 12px 27px;
+    padding: 14px 17px;
     &:hover {
       background-color: transparent;
       border-color: variables.$primary-color;
