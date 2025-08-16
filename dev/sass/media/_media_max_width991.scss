@@ -118,6 +118,21 @@
         max-width: 218px;
         margin: 0 auto 40px;
     }
+
+    .about {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+     .template-title_case-2 {
+        text-align: center;
+    }
+
+    .about_text {
+        text-align: justify;
+    }
+}
+   
 }
 
 

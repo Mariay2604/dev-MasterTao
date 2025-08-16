@@ -1,0 +1,43 @@
+@use 'variables' as variables;
+
+.faq-container {
+        display: flex;
+        gap: 34px;
+
+        .faq-container_questions {
+                width: 700px;
+                .accordion-button {
+                     background-color: transparent;
+                      color: #ffffff;
+                }
+                .accordion-button::after {
+                     background-image: url(../assets/img/arrow-circle-2.svg);
+                }
+                
+}
+
+.accordion-item {
+        margin-bottom: 16px;
+        border: none;
+        background-color: transparent;
+}
+
+.accordion-body {
+        color: #ffffff;
+}
+
+.faq-container_form {
+    max-width: 390px;
+    background: variables.$bg-color-accent;
+    border-radius: 20px;
+    padding: 38px;
+    font-size: 15px;
+
+    input {
+        width: 310px;
+    }
+
+    button {
+        margin-top: 26px;
+    }
+}
