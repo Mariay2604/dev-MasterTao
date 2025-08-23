@@ -1,0 +1,20 @@
+@use "variables" as variables;
+
+.partnership_content {
+	display: flex;
+	gap: 56px;
+	flex-wrap: wrap;
+}
+
+.partnership_content-item {
+	width: calc(50% - 28px);
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 157%;
+	p {
+		margin-bottom: 28px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

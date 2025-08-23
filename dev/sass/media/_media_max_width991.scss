@@ -1,138 +1,156 @@
-@use '../variables' as variables;
+@use "../variables" as variables;
 
 @media screen and (max-width: 991.98px) {
-    .logo {
-        max-width: 126px;
-    }
-    .navbar {
-        padding: 16px 0 15px;
-    }
+	.logo {
+		max-width: 126px;
+	}
+	.navbar {
+		padding: 16px 0 15px;
+	}
 
-    .navbar-collapse {
-        background: variables.$bg-color-accent;
-        margin: 0 -12px;
-        padding: 0 40px;
-        text-align: center;
-        transform: translate(0, 12px);
-    }
+	.navbar-collapse {
+		background: variables.$bg-color-accent;
+		margin: 0 -12px;
+		padding: 0 40px;
+		text-align: center;
+		transform: translate(0, 12px);
+	}
 
-    .navbar-nav {
-        padding: 37px 0 34px;
+	.navbar-nav {
+		padding: 37px 0 34px;
 
-        + .btn {
-            margin-bottom: 60px;
-            width: 100%;
-            max-width: 295px;
-            font-size: 16px;
-            padding: 21px 27px;
-        }
-    }
+		+ .btn {
+			margin-bottom: 60px;
+			width: 100%;
+			max-width: 295px;
+			font-size: 16px;
+			padding: 21px 27px;
+		}
+	}
 
-    .nav-link {
-        color: #fff;
-        font-size: 24px;
-        line-height: 222%;
-    }
+	.nav-link {
+		color: #fff;
+		font-size: 24px;
+		line-height: 222%;
+	}
 
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-        max-width: 100%;
-    }
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+		max-width: 100%;
+	}
 
-    .bg-accent {
-        &::before{
-         border-radius: 0;
-         inset: 0;
-        }
-     }
+	.bg-accent {
+		&::before {
+			border-radius: 0;
+			inset: 0;
+		}
+	}
 
-     .template-title {
-        &.template-title_case-3 {
-            text-align: center;
-            max-width: 100%;
-            padding-bottom: 70px;
+	.template-title {
+		&.template-title_case-3 {
+			text-align: center;
+			max-width: 100%;
+			padding-bottom: 70px;
 
-            h2 {
-                &::after {
-                    @include variables.title-line;
-                    margin: 0;
-                }
-            }
-        }
-     }
+			h2 {
+				&::after {
+					@include variables.title-line;
+					margin: 0;
+				}
+			}
+		}
+	}
 
-     .bg-accent {
-        .container {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-     }
+	.bg-accent {
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
 
-    .swiper-banner {
-       .swiper-slide {
-         display: flex;
-         align-items: center;
-         text-align: center;
-         max-height: calc(100vh - var(--header-height));
+	.swiper-banner {
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			text-align: center;
+			max-height: calc(100vh - var(--header-height));
 
-          &:before {
-             content: "";
-             position: absolute;
-             inset: 0;
-             background-color: #04091199;
-             z-index: -1;
-          }
-          .container {
-            padding: 0 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-    }
+			&:before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background-color: #04091199;
+				z-index: -1;
+			}
+			.container {
+				padding: 0 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.banner-title {
+		font-size: 36px;
+	}
+
+	.banner-description {
+		font-size: 16px;
+		margin-bottom: 18px;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none;
+	}
+
+	.calculation-man {
+		display: none;
+	}
+
+	.input-box_checkbox:first-child {
+		margin-top: 6px;
+	}
+
+	.advantage_title {
+		max-width: 218px;
+		margin: 0 auto 40px;
+	}
+
+	.about {
+		.container {
+			flex-direction: column;
+			align-items: center;
+			.about_text {
+				text-align: justify;
+			}
+		}
+	}
+
+	.faq-container {
+		flex-direction: column;
+	}
+
+	.partnership_content {
+		flex-direction: column;
+	}
+
+	.partnership_content-item {
+		width: 100%;
+		text-align: justify;
+	}
+
+	.order-mobile-negative {
+		order: -1;
+	}
+
+	.footer_menu {
+		display: none;
+	}
+
+	.footer_social {
+		text-align: center;
+	}
 }
-
-.banner-title {
-    font-size: 36px;
-}
-
-.banner-description {
-    font-size: 16px;
-    margin-bottom: 18px;
-}
-
-.swiper-button-next,
-.swiper-button-prev  {
-    display: none;
-}
-
-    .calculation-man {
-        display: none;
-    }
-
-    .input-box_checkbox:first-child {
-        margin-top: 6px;
-    }
-
-    .advantage_title {
-        max-width: 218px;
-        margin: 0 auto 40px;
-    }
-
-    .about {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-     .template-title_case-2 {
-        text-align: center;
-    }
-
-    .about_text {
-        text-align: justify;
-    }
-}
-   
-}
-
-
